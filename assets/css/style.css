@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.nav-buttons{
+    margin-left: 50%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+body{
+    font-family: 'Poppins', sans-serif ;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 1000;
+          
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 3rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 800;
+}
+h6{
+    color: #d8d8d8;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: coral;
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+} 
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link:active,
+.navbar i:hover{
+    color: coral;
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    font-weight: 500;
+    cursor:pointer;
+    margin-left: 5px;
+}
+
+#logo{
+    width: 100px;
+    height: 30px;
+}
+
+@media screen and (max-width: 990px) {
+    .nav-buttons{
+        margin-left: 10px;
+    }
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .nav-buttons ul .fas{
+        margin: 50px 5px 10px 20px;
+    }
+}
+
+#inicio{
+    background-image: url('../imgs/background.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#inicio .container{
+    color: #d8d8d8;
+    font-weight: bolder;
+}
+#inicio h3{
+    color:black;
+}
+#inicio span{
+    color: coral;
+}
+
+#proveedores {
+    padding: 20px;
+}
+
+#novedades .nuevo img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#novedades .nuevo{
+    position: relative;
+}
+
+#novedades .nuevo .detalles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.5;
+    background-color: rgb(1, 1, 1);
+    width: 100%;
+    height: 100%;
+}
+#novedades .nuevo .detalles:hover {
+    background-color: darkgoldenrod;
+}
+#novedades .nuevo:nth-child(1) .detalles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+#novedades .nuevo:nth-child(2) .detalles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+#novedades .nuevo:nth-child(3) .detalles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+/******************** Productos Destacados **********************/
+hr{
+    width: 30px;
+    height: 3px;
+    opacity: 1;
+    background-color: coral;
+}
+
+.productos {
+    cursor:pointer;
+    margin-bottom: 2rem;
+}
+
+.productos img{
+    transition:0.3s all;
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.productos:hover img{
+    opacity: 0.7;
+}
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.9rem;
+    color: goldenrod;
+}
+
+footer{
+    background-color: #1d1d1d;
+
+}
+
+footer h5{
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer p{
+    color: #D8D8D8;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+}
+
+footer li a:hover{
+    color: #D8D8D8;
+}
+footer .copyright {
+    color: #999;
+}
+footer .copyright a{
+    color: #000;
+}
+footer .copyright .fab{
+    color: white;
+}
+
+/*************** Carrito *****************/
+
+.carrito table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carrito .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carrito th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #fb774b;
+}
+
+.carrito td{
+    padding: 10px 20px;
+}
+
+.carrito td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.carrito td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.carrito .borrar-btn {
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+
+.carrito .edit-btn {
+    background-color: white;
+    border: none;
+
+}
+
+.carrito .compra-btn {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************* Login ********************/
+
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #fb774b;
+}
+
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#login-form #login-btn{
+    background-color: #fb774b;
+    color: #fff;
+}
+
+#login-form #register-url{
+    color: #fb774b;
+}
+
+/******************* Registro ********************/
+
+#register-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #fb774b;
+}
+
+#register-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#register-form #register-btn{
+    background-color: #fb774b;
+    color: #fff;
+}
+
+#register-form #login-url{
+    color: #fb774b;
+}
+
+/***************** Página Usuario ****************/
+
+.historial table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.historial th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #fb774b;
+}
+
+.historial td{
+    padding: 10px 20px;
+}
+
+#cerrar-sesion{
+    border: none;
+}
+
+/***************** Página Admin *******************/
+
+.admin-data table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-data th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #fb774b;
+}
+
+.admin-data td{
+    padding: 10px 20px;
+}
+
+/***************** Página Editar Prod *******************/
+
+.edit-prod {
+    text-align: center;
+}
+
+.edit-prod form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.edit-prod label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.edit-prod input[type="text"],
+.edit-prod input[type="number"],
+.edit-prod textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.edit-prod textarea {
+    height: 150px;
+}
+
+.edit-prod input[type="submit"] {
+    background-color: #fb774b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.edit-prod input[type="submit"]:hover {
+    background-color: coral;
+}
+
+/***************** Página Agregar Producto *******************/
+
+/* Página Agregar Producto */
+.add-product {
+    text-align: center;
+}
+
+.add-product form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.add-product label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.add-product input[type="text"],
+.add-product input[type="number"],
+.add-product textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.add-product textarea {
+    height: 150px;
+}
+
+.add-product input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.add-product input[type="submit"]:hover {
+    background-color: #45a049;
+}
